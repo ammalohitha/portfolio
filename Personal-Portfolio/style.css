@@ -1,0 +1,246 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* Navbar */
+
+nav{
+    background:#222;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+nav ul li a:hover{
+    color:#ddd;
+}
+
+/* Dark Mode Button */
+
+#darkModeBtn{
+    padding:8px 12px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* Hero Section */
+
+.hero{
+    text-align:center;
+    padding:100px 20px;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+}
+
+.profile-img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    margin-bottom:20px;
+    transition:0.4s;
+}
+
+.profile-img:hover{
+    transform:scale(1.05);
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.hero h2{
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* Buttons */
+
+.btn{
+    display:inline-block;
+    margin:10px;
+    background:#222;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* Sections */
+
+section{
+    padding:80px 20px;
+    text-align:center;
+}
+
+section h2{
+    font-size:35px;
+    margin-bottom:30px;
+}
+
+/* Cards */
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    width:300px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+
+/* Certifications */
+
+.cert-list{
+    list-style:none;
+    max-width:600px;
+    margin:auto;
+}
+
+.cert-list li{
+    background:white;
+    margin:10px;
+    padding:15px;
+    border-radius:8px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+
+#contact a{
+    text-decoration:none;
+}
+
+/* Footer */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Dark Mode */
+
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode section{
+    background:#1e1e1e;
+    color:white;
+}
+
+.dark-mode .card{
+    background:#2c2c2c;
+    color:white;
+}
+
+.dark-mode .cert-list li{
+    background:#2c2c2c;
+    color:white;
+}
+
+.dark-mode footer{
+    background:black;
+}
+
+/* Responsive Design */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav ul li{
+        margin:10px 0;
+    }
+
+    .hero h1{
+        font-size:35px;
+    }
+
+    .hero h2{
+        font-size:22px;
+    }
+
+    .profile-img{
+        width:180px;
+        height:180px;
+    }
+
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:90%;
+    }
+}
